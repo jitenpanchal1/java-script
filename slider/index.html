@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 2px solid;
+            margin: 0 auto;
+            width: 1000px;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .s-img {
+            width: 100%;
+            position: absolute;
+        }
+
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        img{
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="pre"></p>
+    <ul id="myfal">
+
+    </ul>
+
+    <div >
+        <img src="https://picsum.photos/id/237/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/225/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/278/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/212/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/202/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/273/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/223/1000/500" class="s-img" alt="">
+        <img src="https://picsum.photos/id/229/1000/500" class="s-img" alt="">
+    </div>
+    <nav>
+        <button id="Pre" onclick="prep()">Pre</button>
+        <button id="Next" onclick="nxtt()">Next</button>
+    </nav>
+</body>
+<script src="./app.js"></script>
+
+</html>
