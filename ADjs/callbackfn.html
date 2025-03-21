@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+        function sayhello() {
+            console.log("sayhello");
+        }
+        function sayhi() {
+            console.log("sayhii...");
+        }
+        
+        function add(num1, num2, callback) {
+            console.log(num1 + num2);
+            // sayhello()
+            callback()
+        }
+
+        let a = 5
+        let b = 6
+
+
+        add(a, b, sayhello)
+        add(a, b, sayhi)
+
+    </script>
+
+</body>
+
+</html>

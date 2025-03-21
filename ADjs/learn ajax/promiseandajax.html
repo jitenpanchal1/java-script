@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div id="ttt">
+        open
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <script>
+        function data() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // $.get("info.html", function (dataa) {
+                    //     console.log(dataa)
+                    //     $("#ttt").text(dataa)
+
+
+                        // $.get("https://microsoftedge.github.io/Demos/json-dummy-data/64KB.json", function (dataa) {
+                        // console.log(dataa)
+                        // $("#ttt").text(dataa)
+
+                        $.get("form.html", function (dataa) {
+                        console.log(dataa)
+                        // $("#ttt").html(dataa)
+                    })
+                }, 2000)
+            })
+        }
+
+        data().then((result) => {
+            console.log(result)
+        }).catch(() => {
+            console.log("not get")
+        })
+    </script>
+</body>
+
+</html>

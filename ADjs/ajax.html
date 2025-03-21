@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1 id="myajaxdata">data</h1>
+
+    <button onclick="loaddata()">click</button>
+
+    <script>
+
+        function loaddata() {
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.responseText);
+                    // document.getElementById("myajaxdata").innerHTML = this.responseText
+                }
+            }
+            xhttp.open('GET', "https://jsonplaceholder.typicode.com/posts", true);
+            console.log(xhttp);
+            xhttp.send();
+            console.log(xhttp);
+        }
+
+    </script>
+
+</body>
+
+</html>

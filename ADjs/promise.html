@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+
+
+    <script>
+
+        // let complete = true;
+
+        function mypro() {
+            return new Promise(function (resolve, reject) {
+                console.log("my promise is pending");
+                setTimeout(() => {
+                    $.get("https://jsonplaceholder.typicode.com/posts", function (data) {
+                        console.log(data);
+                    })
+                }, 3000);
+            }
+            )
+        }
+        // console.log(mypro(true));
+
+
+        mypro().then((result) => {
+            console.log(result);
+        }).catch((error) => {
+            console.log(error);
+        })
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

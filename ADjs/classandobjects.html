@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        class Form {
+            constructor(name, details) {
+                console.log("constructor called");
+                this.name = name
+                this.details = details
+            }
+            submit() {
+                alert(this.name + " form submitted for " + this.details)
+            }
+            cancle() {
+                alert(this.name + " form cancelled for " + this.details)
+            }
+            // add(name, details) {
+            //     this.name = name
+            //     this.details = details
+            // }
+        }
+
+        let jiten = new Form("jiten", "frontend")
+        // jiten.add("jiten")
+        let purvi = new Form("purvi", "backend")
+        // purvi.add("purvi", "backend")
+
+        // jiten.submit()
+        // purvi.cancle()
+
+        // console.log(jiten);
+        // console.log(purvi);
+
+        class Bike {
+            constructor(name, model, color, number) {
+                this.name = name
+                this.model = model
+                this.color = color
+                this.number = number
+            }
+            yourf() {
+                alert("this bike is " + this.model)
+            }
+            static sayhey() {
+                console.log("hiiii....");
+            }
+        }
+
+        let bike1 = new Bike("royal", "classic-350", "red", 6768)
+        console.log(bike1);
+
+        // bike1.yourf()
+        // bike1.sayhey()
+        Bike.sayhey()
+        let bike2 = new Bike("bmw", "zx10", "black", 5660)
+
+        // console.log(bike1);
+        // console.log(bike2);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

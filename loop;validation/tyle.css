@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* .fill-input {
+    width: 100%;
+    font-size: 16px;
+} */
+
+/* body {
+    background-image: url(./linear.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    position: relative;
+    background-color: black;
+} */
+
+/* #form {
+    background-image: linear-gradient(at 67% 32%, rgba(215, 169, 81, 0) 0%, #4e51d3 100%) 92% 94%/139% 196%;
+    border: 5px solid rgb(128, 240, 133);
+    padding: 30px 50px 30px 50px;
+    border-radius: 20px;
+} */
+
+/* .input-data {
+    margin-bottom: 25px;
+    position: relative;
+
+} */
+
+/* input {
+    border: 2px solid rgb(48, 54, 128);
+    outline: none;
+    border-radius: 33px;
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+} */
+
+/* .same-pad {
+    padding: 5px 5px;
+} */
+
+/* h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+} */
+
+/* label {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 3px;
+    word-spacing: 5px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+} */
+
+/* .but {
+    text-align: center;
+    margin: 0 60px;
+} */
+
+/* small {
+    position: absolute;
+    top: 55px;
+    left: 0px;
+} */
+
+/* h3 {
+    display: inline-block;
+} */
+
+/* .select {
+    text-align: center;
+
+} */
+
+/* .seler {
+    position: absolute;
+    top: 30px;
+} */
+
+/* #genderer {
+    position: absolute;
+    top: 20px;
+} */
+
+/* .genderlog {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* #optioner {
+    color: rgb(226, 12, 62);
+} */
+
+/* .same-sp {
+    letter-spacing: 2px;
+    font-size: 14px;
+    border-bottom: 2px solid green;
+} */
+
+/* select {
+    width: 100%;
+    padding: 5px 0;
+    margin-bottom: 20px;
+} */
+
+/* .but-st {
+    text-transform: uppercase;
+} */
+
+
+/* body {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-box {
+    border: 2px solid ;
+    margin: 0px 100px;
+    padding: 0px 100px;
+}
+
+input {
+    width: 100%;
+} */
+
+.form-sec {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    border: 2px solid;
+    padding: 0px 10px 0px 10px;
+}
+
+input {
+    width: 100%;
+    padding: 3px 0;
+    margin-bottom: 20px;
+}
+
+.error input {
+    border: 3px solid red;
+}
+
+.sucess input {
+    border: 3px solid green;
+
+}
+
+.error span {
+    color: red;
+}
+
+.sucess span {
+    color: green;
+}
+
+.button-box {
+    text-align: center
+}
+
+.input-box {
+    position: relative;
+}
+
+.error .icon {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    color: red;
+}
+
+.sucess .icon {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    color: green;
+}
+
+span {
+    font-size: 13px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    position: absolute;
+    top: 45px;
+    left: 1px;
+    /* display: block; */
+}

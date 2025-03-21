@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="show"></h1>
+    <button id="click" onclick="change()">click me</button>
+
+    <script>
+        function change() {
+            let xxxp = new XMLHttpRequest();
+            xxxp.onreadystatechange = function () {
+                if (this.readyState = 4 && this.status == 200) {
+                    // console.log(this.responseText)
+                    document.getElementById("show").innerText = this.responseText
+                }
+            }
+            xxxp.open("GET", "promiseandajax.html", true);
+            xxxp.send();
+        }
+        // document.getElementById().innerText
+
+    </script>
+</body>
+
+</html>
