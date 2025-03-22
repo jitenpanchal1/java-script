@@ -97,26 +97,44 @@
 //     console.log(err)
 // })
 
-function dataFetch() {
+// function dataFetch() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             if (Math.random() > 0.3) {
+//                 resolve("goood")
+//             } else {
+//                 reject("go to hell")
+//             }
+//         }, 2000)
+//     })
+// }
+
+
+// dataFetch().then((res) => {
+//     console.log(res)
+// }).catch((err) => {
+//     console.log(err)
+// })
+
+
+
+
+
+function mypro() {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            if (Math.random() > 0.3) {
-                resolve("goood")
-            } else {
-                reject("go to hell")
-            }
-        }, 2000)
+        let book = 15
+        if (book >= 10) {
+            reject()
+        } else {
+            resolve()
+        }
     })
 }
-
-
-dataFetch().then((res) => {
-    console.log(res)
-}).catch((err) => {
-    console.log(err)
+let but = document.getElementById("red")
+mypro().then(() => {
+    but.classList.add("green")
+    console.log("data pass")
+}).catch(() => {
+    but.classList.toggle("red")
+    console.log("data fail")
 })
-
-
-
-
-
