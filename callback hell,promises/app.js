@@ -116,10 +116,6 @@
 //     console.log(err)
 // })
 
-
-
-
-
 function mypro() {
     return new Promise((resolve, reject) => {
         let book = 15
