@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="form-filling">
+        <div>
+            <h1>fill the form as condition</h1>
+        </div>
+        <form>
+            <div class="fill-area">
+                <label for="name">enter your name</label>
+                <input type="text" class="space" id="name">
+                <i class="fa-solid"></i><!--fa-square-check-->
+                <div class="msgg"></div>
+            </div>
+
+            <div class="fill-area">
+                <label for="email">enter your email</label>
+                <input type="email" class="space" id="email">
+                <i class="fa-solid"></i><!--fa-square-xmark-->
+                <div class="msgg"></div>
+            </div>
+
+            <input type="submit" id="sub" class="space-2" value="submit form">
+            <input type="reset"  class="space-2" value="reset">
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>

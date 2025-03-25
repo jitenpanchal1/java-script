@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-filling {
+    border: 2px solid black;
+    padding: 50px;
+}
+
+.space {
+    width: 100%;
+    padding: 2px 0px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+.fill-area {
+    position: relative;
+}
+
+.fa-solid {
+    position: absolute;
+    top: 22px;
+    right: 5px;
+}
+
+.msgg {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+}
+
+.space-2 {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.fa-square-check {
+    color: green;
+}
+
+.sus-msg {
+    color: green;
+}
+
+.sus-border {
+    border: 2px solid green;
+}
+
+.fa-square-xmark {
+    color: red;
+}
+
+.er-msg {
+    color: red;
+    border-bottom: solid red 2px;
+}
+
+.er-border {
+    border: 2px solid red;
+}
