@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(121, 106, 106);
+}
+
+
+.responsive {
+    position: relative;
+    margin: auto;
+    width: 500px;
+    width: 900px;
+}
+
+.slick-dots {
+    margin: auto;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.slick-dots li button {
+    font-size: 0px;
+    width: 10px;
+    height: 10px;
+    border: none;
+    border-radius: 100%;
+}
+
+.slick-active button {
+    background-color: aquamarine;
+}
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slick-prev {
+    left: 0px;
+    top: 22%;
+    padding: 99px 5px 99px 5px;
+}
+
+.slick-next {
+    right: 0px;
+    top: 22%;
+    padding: 99px 5px 99px 5px;
+}
+
+.slick-prev:active,
+.slick-next:active {
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
